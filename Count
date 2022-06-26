@@ -1,0 +1,25 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Here is a code which does some kind of magic.
+
+        int count;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число = ");
+        count = scanner.nextInt();
+
+        int max = 100;
+
+        for (int i = 1; i < count; i++){
+            System.out.println(i);
+            if (count > max){
+                max = count;
+            }
+        }
+        System.out.println("Max число = " + max);
+    }
+}
