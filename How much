@@ -1,3 +1,12 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Here is a code which does some kind of magic.
+
         int a;
         int b;
         int c;
@@ -16,5 +25,15 @@
             System.out.println("Больше всех b = " + b);
         else if (c > a && c > b)
             System.out.println("Больше всех c = " + c);
-        else if (a == b && b ==c)
-            System.out.println("Все числа равны"); 
+        else if (a == b && b == c && a == c)
+            System.out.println("Все числа равны");
+        else if(a == b)
+            System.out.println("Больше всех a&&b = " + a);
+        else if(a == c)
+            System.out.println("Больше всех a&&c = " + c);
+        else if(b == c)
+            System.out.println("Больше всех b&&c" + b);
+
+
+    }
+}
